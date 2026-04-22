@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>House Rock</title>
+
+<script>
+!function(f,b,e,v,n,t,s)
+{if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+n.queue=[];t=b.createElement(e);t.async=!0;
+t.src=v;s=b.getElementsByTagName(e)[0];
+s.parentNode.insertBefore(t,s)}
+(window, document,'script','https://connect.facebook.net/en_US/fbevents.js');
+
+fbq('init', '767415312843142');
+fbq('track', 'PageView');
+fbq('track', 'ViewContent');
+</script>
+
+<style>
+body{margin:0;background:#000;font-family:Arial}
+.hero{position:relative;width:100%;max-width:520px;margin:auto}
+.hero img{width:100%;display:block}
+
+.cta{
+position:absolute;
+bottom:30px;
+left:50%;
+transform:translateX(-50%);
+width:88%;
+padding:22px;
+border-radius:60px;
+text-align:center;
+font-size:28px;
+font-weight:bold;
+color:white;
+background:linear-gradient(45deg,#25D366,#00a884);
+box-shadow:0 0 35px rgba(0,255,120,1);
+animation:pulse 1.4s infinite;
+text-decoration:none;
+}
+
+@keyframes pulse{
+0%{transform:translateX(-50%) scale(1)}
+50%{transform:translateX(-50%) scale(1.08)}
+100%{transform:translateX(-50%) scale(1)}
+}
+</style>
+
+</head>
+
+<body>
+
+<div class="hero">
+<img src="principal.png">
+
+<a href="https://wa.me/5491171816458"
+class="cta"
+target="_blank"
+rel="noopener noreferrer"
+onclick="fbq('track','Lead'); fbq('track','Contact');">
+HABLAR POR WHATSAPP
+</a>
+
+</div>
+
+</body>
+</html>
